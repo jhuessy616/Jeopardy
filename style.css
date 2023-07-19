@@ -1,0 +1,307 @@
+/* Using Jeopardy font */
+@font-face {
+  font-family: "jeopardy";
+  src: url("./fonts/webfontkit-20221117-213143/gyparody-webfont.woff");
+}
+
+/* Setting a background image that is centered and covers entire page. */
+body {
+  background: url("https://bostonglobe-prod.cdn.arcpublishing.com/resizer/MIwXCEqUwcNl54xRN7nmaRkOUn4=/1440x0/cloudfront-us-east-1.images.arcpublishing.com/bostonglobe/66LUJA7EKIYKB4CPEWV5YK2QBU.jpg");
+  background-size: cover;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+/* h1 and h3 styling and also adding animation for color change to occuron h1  */
+h1 {
+  font-size: 9vw;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  animation-name: colorchange;
+  animation-duration: 5s;
+}
+
+h3 {
+  text-decoration: underline;
+  font-size: 5vw;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+/* background color around text to make text pop without taking uo entire screen width */
+span {
+  background: rgba(5, 53, 166, 0.5);
+  padding: 0px 5px;
+}
+.playerscore {
+  padding: 0px;
+}
+/* button design */
+button {
+  width: 15vw;
+  height: 4vw;
+  font-size: 1.5vw;
+  background-color: rgba(87, 219, 254, 0.8);
+  margin: 10px;
+}
+
+/* creating spacing for footer below content set the container to fit the screen  Also used to create spacing on */
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  margin: auto;
+  padding-bottom: 5rem;
+}
+
+/* this is the footer text in an h5 */
+h5 {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 2vw;
+  color: rgb(87, 219, 254);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 1%;
+}
+
+.footer span {
+  background-color: rgba(139, 33, 100, 0.7);
+  padding: 1vh 30vw;
+}
+
+/* this is the board/grid for the questions */
+.board {
+  display: grid;
+  grid-gap: 0.5vw;
+  grid-template-columns: repeat(6, 1fr);
+  /* can do this rather than 1fr, 1fr over and over */
+  width: 80vw;
+  margin: 10px auto 20px;
+}
+.category {
+  font-size: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(87, 87, 218, 0.95);
+  color: Yellow;
+  font-weight: bold;
+  border-width: 1vw;
+  border-style: groove;
+  border-color: blue;
+}
+
+#question {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 10vw;
+  color: yellow;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.5vw;
+  /* background-color: rgba(0, 0, 255, 0.4); */
+}
+
+.box {
+  font-size: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 255, 0.95);
+  color: Yellow;
+  font-weight: bold;
+  border-width: 1vw;
+  border-style: groove;
+  border-color: blue;
+}
+/* want my h1 to have the same properties as title page but just a little bit smaller */
+.round {
+  font-size: 8vw;
+}
+/* sizing the input button so it scales with screen size */
+
+input {
+  font-size: 1.5vw;
+  width: 18vw;
+  height: 3vw;
+}
+
+.input {
+  display: inline-block;
+}
+/* color change and zoom animation with hover over categories */
+.box:hover {
+  color: red;
+  font-size: 5vh;
+}
+/* paragraph settings */
+p {
+  display: inline;
+  color: yellow;
+  margin: 2vw 2vw;
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+/* next round button to the right */
+.nextround {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button.right {
+  margin-right: 5vw;
+  margin-top: 0.75vw;
+}
+/* changing margins of button on home oage to have better spacing */
+button.play {
+  margin-top: 30px;
+}
+
+/* divs for final page */
+.final-category {
+  margin: 0 20vw;
+  background-color: rgba(139, 33, 100, 0.7);
+  color: rgb(87, 219, 254);
+}
+/* H2 on final page */
+h2 {
+  padding: 1vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  font-family: "jeopardy";
+  font-size: 3.5vw;
+}
+/* final question div */
+.final-question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vw;
+  width: 60vw;
+  margin: 0 auto;
+  background-image: url("assets/rob.png");
+  background-size: 15%;
+  justify-content: center;
+}
+/* final question size  */
+.final-question p {
+  font-size: 2.6vw;
+}
+/* player turn */
+.player {
+  font-size: 2.5vw;
+  color: yellow;
+  background-color: rgba(0, 0, 255, 0.3);
+}
+
+/* final page forms */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* animation color styling */
+@keyframes colorchange {
+  from {
+    color: white;
+  }
+  to {
+    color: fuchsia;
+  }
+}
+
+/* changing to fit cell phone screens */
+@media (max-width: 700px) {
+  h1 {
+    margin: 25px;
+  }
+  h3 {
+    margin-bottom: 20px;
+  }
+  .board {
+    width: 95vw;
+    height: 55vh;
+  }
+  input {
+    margin: 10px;
+    width: 35vw;
+    height: 6vw;
+    font-size: 3vw;
+  }
+  p {
+    font-size: 2.5vw;
+  }
+  button {
+    width: 18vw;
+
+    height: 8vw;
+    font-size: 3.5vw;
+    margin: 0;
+  }
+  .right {
+    width: 26vw;
+  }
+  .box {
+    font-size: 3vw;
+  }
+  .box:hover {
+    font-size: 4.5vw;
+  }
+  /* fixed footer on pnones so visible wherever you are scrolling */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .final-question {
+    width: 90vw;
+    height: 40vw;
+  }
+  .final-question p {
+    font-size: 4vw;
+  }
+}
+@media (max-width: 500px) {
+  /* center on page on phones first and last page */
+  .index {
+    margin-top: 50%;
+  }
+  .final {
+    margin-top: 30%;
+  }
+}
+
+/* for big monitors to control input spacing */
+@media (min-width: 1700px) {
+  .board {
+    padding-bottom: 5vh;
+  }
+}
+/* for the freaking galaxy fold that's super skinny */
+@media (max-width: 300px) {
+  p {
+    font-size: 2vw;
+  }
+  .right {
+    font-size: 3vw;
+  }
+}
+/* for landscaped phones */
+@media (max-height: 600px) {
+  .board {
+    height: auto;
+  }
+}

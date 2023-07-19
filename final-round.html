@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Round</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="page-container">
+      <div class="content-wrap final">
+        <!-- ^ creating a space below the content for the footer so the footer doesn't overlap material-->
+        <header>
+          <h1 style="font-family: 'jeopardy'"><span> Final Round </span></h1>
+        </header>
+        <!-- <h3 id="player turn"></h3> -->
+        <!-- final category -->
+        <div class="final-category">
+          <h2>All about Rob VanArsdal</h2>
+        </div>
+        <!-- final question -->
+        <div class="final-question">
+          <p>
+            <span id="finalquestiondisplay">
+            </span>
+          </p>
+        </div>
+        <h3></h3>
+        <!-- buttons and inputs -->
+        <div class="bet">
+          <!-- Bet form  -->
+         <form method="" action="" class="form-container" id="betform">
+          <!-- player 1's bet -->
+          <label class="player" id="player1">Player 1</label>
+        <input type="number" min="0" id="playerOneBet" placeholder="Player 1 Bet">
+       <!-- player 2's bet -->
+         <label class="player" id="player2">Player 2</label>
+        <input type="number" min=0 id="playerTwoBet" placeholder="Player 2 Bet">
+        <button id="placeBet">Place Bet</button>
+    </form>
+        </div>
+        <!-- answer form -->
+           <div class="answer">
+         <form method="" action="" class="form-container" id="answerform" style.visibilty="hidden">
+        <!-- player 1's answer -->
+          <label class="player" id="player1">Player 1</label>
+        <input type="number" id="playerOneAnswer" placeholder="Player 1 Answer">
+       <!-- player 2's answer -->
+         <label class="player" id="player2">Player 2</label>
+        <input type="number" id="playerTwoAnswer" placeholder="Player 2 Answer">
+        <button id="submit">Submit</button>
+    </form>
+        </div>
+      <!-- footer -->
+      <div class="footer">
+        <footer>
+          <!-- adding background to footer so it doesn't stretch across the entire page -->
+          <h5><span>Product of Huessy LLC</span></h5>
+        </footer>
+      </div>
+    </div>
+    <!-- Do not change the script source. Allows import/export to work. -->
+    <script src="./scripts/final-round.js" type="module"></script>
+  </body>
+</html>

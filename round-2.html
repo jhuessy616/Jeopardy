@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Round 2</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- animation library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="page-container">
+      <div class="content-wrap">
+        <!-- ^ creating a space below the content for the footer -->
+        <header>
+          <!-- calling on animation -->
+          <h1 class="round animate__animated animate__backInLeft">
+            <span> Round Two </span>
+          </h1>
+        </header>
+        <h3 id="player-turn"></h3>
+
+        <!-- div for jeopardy board -->
+        <div class="board">
+          <div class="category">Nature</div>
+          <div class="category">Animals</div>
+          <div class="category">Computers</div>
+          <div class="category">Mythology</div>
+          <div class="category">History</div>
+          <div class="category">General</div>
+          <div class="box nature">200</div>
+          <div class="box animals">200</div>
+          <div class="box computers">200</div>
+          <div class="box mythology">200</div>
+          <div class="box history">200</div>
+          <div class="box general">200</div>
+          <div class="box nature">400</div>
+          <div class="box animals">400</div>
+          <div class="box computers">400</div>
+          <div class="box mythology">400</div>
+          <div class="box history">400</div>
+          <div class="box general">400</div>
+          <div class="box nature">600</div>
+          <div class="box animals">600</div>
+          <div class="box computers">600</div>
+          <div class="box mythology">600</div>
+          <div class="box history">600</div>
+          <div class="box general">600</div>
+          <div class="box nature">800</div>
+          <div class="box animals">800</div>
+          <div class="box computers">800</div>
+          <div class="box mythology">800</div>
+          <div class="box history">800</div>
+          <div class="box general">800</div>
+          <div class="box nature">1000</div>
+          <div class="box animals">1000</div>
+          <div class="box computers">1000</div>
+          <div class="box mythology">1000</div>
+          <div class="box history">1000</div>
+          <div class="box general">1000</div>
+        </div>
+
+         <!-- Where Question and Answer will be displayed -->
+        <h2 id="question"></h2>
+        <!-- input box -->
+
+        <div class="input">
+          <input id= "answer" type="text" placeholder="Your answer here" />
+        </div>
+
+        <!-- player scores and buttons  -->
+
+        <!-- Like the look of them inline -->
+         <div class="buttons-score">
+          <p><span>Player 1 Score:</span><span class= "playerscore" id="player1Score"></span></span></p>
+          <button id="guess"><b>Guess!</b></button>
+          <button id="pass"><b>Pass!</b></button>
+          <!-- previously all in span -->
+         <p><span>Player 2 Score:</span><span class= "playerscore" id="player2Score"></span></span></p>
+
+        <!-- on wire frame this button is to the right -->
+        <!-- flexboxing this to right on css -->
+        <div class="nextround">
+          <button id="nextround" class="right">
+           <b>Final Round!</b></a>
+          </button>
+        </div>
+      </div>
+      <!-- footer -->
+
+      <div class="footer">
+        <footer>
+          <!-- adding background to footer so it doesn't stretch across the entire page -->
+          <h5><span>Product of Huessy LLC</span></h5>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Do not change the script source. Allows import/export to work. -->
+    <script src="./scripts/round1.js" type="module"></script>
+  </body>
+</html>
